@@ -1,8 +1,4 @@
 
----
-
-### **Step 3: Create a GitHub Repository**
-
 1. **Create a New Repository**:
    - Go to [GitHub](https://github.com).
    - Log in and click on **"New"** to create a repository.
@@ -26,7 +22,7 @@
 
    - Add your remote repository link:
      ```bash
-     git remote add origin <your-repo-link>
+     git remote add origin <https://github.com/sathwikavardhineedi/Stock-Sentiment-Analysis>
      ```
 
    - Add and commit your files:
@@ -43,7 +39,7 @@
 
 ---
 
-### **Step 4: Review Your Repository**
+
 
 After pushing your project, visit your repository link and ensure:
 - All files (code, README, requirements.txt, report.pdf) are uploaded.
@@ -52,9 +48,9 @@ After pushing your project, visit your repository link and ensure:
 
 ---
 
-### **Step 5: Submit the GitHub Link**
 
-Copy the **repository URL** (e.g., `https://github.com/username/StockSentimentPrediction`) and submit it as part of your assignment.
+
+Copy the **repository URL** (e.g., `https://github.com/sathwikavardhineedi/Stock-Sentiment-Analysis`) and submit it as part of your assignment.
 
 ---
 
