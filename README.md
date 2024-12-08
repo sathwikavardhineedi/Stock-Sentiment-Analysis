@@ -25,7 +25,7 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-link>
+git clone <https://github.com/sathwikavardhineedi/Stock-Sentiment-Analysis/tree/main>
 cd StockSentimentPrediction
 ```
 
