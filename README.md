@@ -1,63 +1,72 @@
 
-1. **Create a New Repository**:
-   - Go to [GitHub](https://github.com).
-   - Log in and click on **"New"** to create a repository.
-   - Fill in the details:
-     - **Repository name**: `StockSentimentPrediction`.
-     - **Description**: A brief description of your project.
-     - **Visibility**: Choose public or private.
-   - Click **"Create repository"**.
+# Stock Sentiment Prediction
 
-2. **Push Your Project to GitHub**:
-   - Open your terminal or command prompt.
-   - Navigate to your project folder:
-     ```bash
-     cd path/to/StockSentimentPrediction
-     ```
+## Project Overview
+This project predicts stock sentiment by analyzing discussions on Reddit. It combines web scraping, sentiment analysis, and machine learning to classify posts as positive or negative/neutral, providing valuable insights into stock market trends.
 
-   - Initialize the repository:
-     ```bash
-     git init
-     ```
+Key steps include:
+- Scraping data from Reddit subreddits like `r/stocks` using `asyncpraw`.
+- Preprocessing and cleaning text data to prepare it for analysis.
+- Using VADER sentiment analysis to extract sentiment scores.
+- Training an XGBoost classifier to predict sentiment based on features like sentiment scores, post popularity, and recency.
+- Evaluating the model with metrics like accuracy, precision, recall, and F1-score.
 
-   - Add your remote repository link:
-     ```bash
-     git remote add origin <https://github.com/sathwikavardhineedi/Stock-Sentiment-Analysis>
-     ```
-
-   - Add and commit your files:
-     ```bash
-     git add .
-     git commit -m "Initial commit"
-     ```
-
-   - Push the files to GitHub:
-     ```bash
-     git branch -M main
-     git push -u origin main
-     ```
-
----
+## Project File
+- `CapX.ipynb`: Colab notebook containing all the steps of the project, including:
+  - Data scraping
+  - Preprocessing
+  - Sentiment analysis
+  - Model training and evaluation
+  - Results visualization and insights
 
 
+## Setup Instructions
+Follow these steps to set up and run the project locally:
 
-After pushing your project, visit your repository link and ensure:
-- All files (code, README, requirements.txt, report.pdf) are uploaded.
-- The README.md is displayed correctly.
-- The instructions are clear.
+1. Clone the repository:
+```bash
+git clone <your-repo-link>
+cd StockSentimentPrediction
+```
+
+2. Install dependencies:
+Ensure you have Python 3.8 or later installed. Install the required libraries:
+```bash
+pip install -r requirements.txt
+```
+
+3. Open the colab notebook:
+```bash
+colab notebook CapX.ipynb
+```
+
+4. Follow the steps in the notebook:
+   - Run the cells sequentially to scrape data, preprocess it, train the model, and evaluate its performance.
 
 ---
 
+## Results
+- **Accuracy**: Achieved 90% accuracy on the test set.
+- **New Data Performance**:
+  - Accuracy: 80%-100% depending on data.
+  - Precision, Recall, and F1-Score: Evaluated and displayed in the notebook.
 
-
-Copy the **repository URL** (e.g., `https://github.com/sathwikavardhineedi/Stock-Sentiment-Analysis`) and submit it as part of your assignment.
-
----
-
-### **Other Tips**:
-1. **Preview Your Repository**: Ensure the repository is user-friendly and professional.
-2. **Check Accessibility**: If your repo is private, grant access to the evaluator or make it public temporarily.
+Confusion matrix and other evaluation metrics are included in the results section of the notebook.
 
 ---
 
-If you have any specific questions or face issues while setting this up, feel free to ask! 😊
+## Challenges and Improvements
+### Challenges:
+- Balancing data between positive and negative sentiment posts.
+- Handling noisy data from social media discussions.
+
+### Future Improvements:
+- Integrate additional data sources (e.g., Twitter, Telegram).
+- Enhance text processing using advanced NLP techniques like BERT.
+- Develop a real-time dashboard for sentiment tracking.
+
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+
